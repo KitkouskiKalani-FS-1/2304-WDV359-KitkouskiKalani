@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Logo from '../images/Stats_logo.jpeg';
 import ChampionCard from '../components/ChampionCard';
+import ChampionInfoCard from '../components/ChampionInfoCard';
 
 function ChampionListPage() {
   return (
@@ -32,6 +33,7 @@ function ChampionListPage() {
       <Row>
         <Col>
           <ChampionCard/>
+          <ChampionInfoCard/>
         </Col>
       </Row>
     </Container>
