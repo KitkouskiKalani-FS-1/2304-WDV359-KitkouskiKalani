@@ -6,6 +6,7 @@ import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Logo from '../images/Stats_logo.jpeg';
 import ItemInfoCard from '../components/ItemInfoCard';
+import ItemStatsCard from '../components/ItemStatsCard';
 
 function SearchItemPage() {
   return (
@@ -35,6 +36,8 @@ function SearchItemPage() {
         </Col>
       </Row>
       <ItemInfoCard/>
+      <br/>
+      <ItemStatsCard/>
     </Container>
   );
 }
