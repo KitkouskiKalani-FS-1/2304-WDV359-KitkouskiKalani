@@ -7,6 +7,7 @@ import Form from 'react-bootstrap/Form';
 import Logo from '../images/Stats_logo.jpeg';
 import ChampionCard from '../components/ChampionCard';
 import ChampionInfoCard from '../components/ChampionInfoCard';
+import ChampionStatsCard from '../components/ChampionStatsCard';
 
 function ChampionListPage() {
   return (
@@ -34,6 +35,8 @@ function ChampionListPage() {
         <Col>
           <ChampionCard/>
           <ChampionInfoCard/>
+          <br/>
+          <ChampionStatsCard/>
         </Col>
       </Row>
     </Container>
