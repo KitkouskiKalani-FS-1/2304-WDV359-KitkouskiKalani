@@ -7,6 +7,8 @@ import Form from 'react-bootstrap/Form';
 import Logo from '../images/Stats_logo.jpeg';
 import ItemInfoCard from '../components/ItemInfoCard';
 import ItemStatsCard from '../components/ItemStatsCard';
+import LeaderboardPlayerCard from '../components/LeaderboardPlayerCard';
+
 
 function SearchItemPage() {
   return (
@@ -38,6 +40,8 @@ function SearchItemPage() {
       <ItemInfoCard/>
       <br/>
       <ItemStatsCard/>
+      <br/>
+      <LeaderboardPlayerCard/>
     </Container>
   );
 }
