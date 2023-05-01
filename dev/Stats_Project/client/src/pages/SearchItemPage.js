@@ -5,14 +5,13 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import Logo from '../images/Stats_logo.jpeg';
-import ItemInfoCard from '../components/ItemInfoCard';
-import ItemStatsCard from '../components/ItemStatsCard';
+import ItemCard from '../components/ItemCard';
 import LeaderboardPlayerCard from '../components/LeaderboardPlayerCard';
 
 
 function SearchItemPage() {
   return (
-    <Container style={{backgroundColor:"#1A2145", color:"white", height:"100vh"}} fluid>
+    <Container style={{backgroundColor:"#1A2145", color:"white", height:"130vh"}} fluid>
       <Row>
         <Col>
           <NavBar/>
@@ -37,11 +36,35 @@ function SearchItemPage() {
           </Form>
         </Col>
       </Row>
-      <ItemInfoCard/>
-      <br/>
-      <ItemStatsCard/>
-      <br/>
-      <LeaderboardPlayerCard/>
+      <Row>
+        <Col md="1"></Col>
+        <Col md="10">
+        <Row className="my-3 align-items-center">
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+        </Row>
+        <Row className="my-3">
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+        </Row>
+        <Row className="my-3">
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+          <Col md="2"><ItemCard/></Col>
+        </Row>
+      </Col>
+      </Row>
     </Container>
   );
 }

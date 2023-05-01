@@ -5,8 +5,6 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 import ChampionCard from '../components/ChampionCard';
-import ChampionInfoCard from '../components/ChampionInfoCard';
-import ChampionStatsCard from '../components/ChampionStatsCard';
 
 function ChampionListPage() {
   return (
@@ -31,33 +29,33 @@ function ChampionListPage() {
         </Col>
       </Row>
       <Row>
-  <Col md="1"></Col>
-  <Col md="10">
-    <Row className="my-3">
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-    </Row>
-    <Row className="my-3">
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-    </Row>
-    <Row className="my-3">
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-      <Col md="2"><ChampionCard/></Col>
-    </Row>
-  </Col>
+      <Col md="1"></Col>
+      <Col md="10">
+        <Row className="my-3">
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+        </Row>
+        <Row className="my-3">
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+        </Row>
+        <Row className="my-3">
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+          <Col md="2"><ChampionCard/></Col>
+        </Row>
+      </Col>
   </Row>
 </Container>
   );
