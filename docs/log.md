@@ -30,9 +30,7 @@ What I worked on this week was a research document that went over innovation and
 
 ### Week 4
 
-My final stand up...
-
-
+What I worked on this week was putting all of the previous components and front end together to essentially make a full react front-end for the website I want to complete, challenges I had included using bootstrap classes and getting more used to using the grid system. Something I am really happy to have accomplished is getting the front-end for the website looking good.
 
 
 
