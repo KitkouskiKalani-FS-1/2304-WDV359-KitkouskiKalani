@@ -6,11 +6,13 @@ import Container from 'react-bootstrap/Container';
 import ChampionListPage from './pages/ChampionListPage';
 import SearchItemPage from './pages/SearchItemPage';
 import LeaderboardPage from './pages/LeaderboardPage';
+import SpecificItemPage from './pages/SpecificItemPage';
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/item/:itemName" element={<SpecificItemPage/>} />
         <Route path="/leaderboard" element={<LeaderboardPage/>} />
         <Route path="/championlist" element={<ChampionListPage/>} />
         <Route path="/" element={<SearchItemPage/>} />
