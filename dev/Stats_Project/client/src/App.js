@@ -7,11 +7,13 @@ import ChampionListPage from './pages/ChampionListPage';
 import SearchItemPage from './pages/SearchItemPage';
 import LeaderboardPage from './pages/LeaderboardPage';
 import SpecificItemPage from './pages/SpecificItemPage';
+import SpecificChampionPage from './pages/SpecificChampionPage';
 
 function App() {
   return (
     <Router>
       <Routes>
+        <Route path="/champion/:championName" element={<SpecificChampionPage/>} />
         <Route path="/item/:itemName" element={<SpecificItemPage/>} />
         <Route path="/leaderboard" element={<LeaderboardPage/>} />
         <Route path="/championlist" element={<ChampionListPage/>} />
