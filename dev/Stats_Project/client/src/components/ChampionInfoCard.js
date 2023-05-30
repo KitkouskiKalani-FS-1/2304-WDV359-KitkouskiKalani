@@ -1,6 +1,5 @@
-import ChampionIcon from "../images/Aatrox_Icon.jpeg";
-
-function ChampionInfoCard() {
+function ChampionInfoCard(props) {
+    let champion= props.championData;
     return (
         <div style={{ 
             display: 'flex',
@@ -20,7 +19,7 @@ function ChampionInfoCard() {
               alignItems: 'center'
           }}>
             <img 
-              src={ChampionIcon} 
+              src={champion.icon} 
               alt="square image" 
               style={{ 
                   width: '100px',
@@ -29,8 +28,8 @@ function ChampionInfoCard() {
                   margin: '5px'
               }} 
             />
-            <div style={{ fontWeight: 'bold' }}>Aatrox</div>
-            <div style={{ color:'#1A2145' }}>The Darkin Blade</div>
+            <div style={{ fontWeight: 'bold' }}>{champion.name}</div>
+            <div style={{ color:'#1A2145' }}>{champion.title}</div>
           </div>
           <div style={{ 
               display: 'flex',
@@ -39,7 +38,7 @@ function ChampionInfoCard() {
               marginLeft: '10px'
           }}>
             <div style={{ fontWeight: 'bold', color:'#1A2145' }}>Summoner Type</div>
-            <div style={{ color: '#FFFFFF'}}>Fighter</div>
+            <div style={{ color: '#FFFFFF'}}>{champion.tags[0]}</div>
           </div>
         </div>
       );

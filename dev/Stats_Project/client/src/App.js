@@ -13,8 +13,8 @@ function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/champion/:championName" element={<SpecificChampionPage/>} />
-        <Route path="/item/:itemName" element={<SpecificItemPage/>} />
+        <Route path="/champion/:id" element={<SpecificChampionPage/>} />
+        <Route path="/item/:id" element={<SpecificItemPage/>} />
         <Route path="/leaderboard" element={<LeaderboardPage/>} />
         <Route path="/championlist" element={<ChampionListPage/>} />
         <Route path="/" element={<SearchItemPage/>} />
