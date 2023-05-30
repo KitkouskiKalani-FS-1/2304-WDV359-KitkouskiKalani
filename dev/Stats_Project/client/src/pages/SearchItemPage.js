@@ -7,11 +7,12 @@ import Form from 'react-bootstrap/Form';
 import Logo from '../images/Stats_logo.jpeg';
 import ItemCard from '../components/ItemCard';
 import LeaderboardPlayerCard from '../components/LeaderboardPlayerCard';
+import { apiDataItems } from '../apiData/apiDataItems';
 
 
 function SearchItemPage() {
   return (
-    <Container style={{backgroundColor:"#1A2145", color:"white", height:"130vh"}} fluid>
+    <Container style={{backgroundColor:"#1A2145", color:"white", minHeight:"100vh"}} fluid>
       <Row>
         <Col>
           <NavBar/>
@@ -24,46 +25,17 @@ function SearchItemPage() {
       </Row>
       <Row>
         <Col className="d-flex justify-content-center mt-10">
-          <h1>Look up an item and get valuable details</h1>
+          <h1>Look for an item and get valuable details</h1>
         </Col>
       </Row>
       <Row className="mt-5 justify-content-center">
-        <Col className="col-6">
-          <Form>
-            <Form.Group className="mb-3" controlId="formItemSearch">
-            <Form.Control style={{borderRadius:"20px", height:"50px"}} type="text" placeholder="Search Item Name" />
-            </Form.Group>
-          </Form>
-        </Col>
       </Row>
-      <Row>
-        <Col md="1"></Col>
-        <Col md="10">
-        <Row className="my-3 align-items-center">
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-        </Row>
-        <Row className="my-3">
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-        </Row>
-        <Row className="my-3">
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-          <Col md="2"><ItemCard/></Col>
-        </Row>
-      </Col>
+      <Row >
+        {apiDataItems.map((item, index) => (
+          <Col md="2" className="my-3" key={index}>
+            <ItemCard itemName={item.name} itemIconSrc={item.icon} itemPlainText={item.plaintext} itemPrice={item.price} itemDescription={item.description} itemIndex={index}/>
+          </Col>
+        ))}
       </Row>
     </Container>
   );
